@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#020907">
+  <title>PS4 System Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <div class="corner corner-a"></div><div class="corner corner-b"></div>
+    <header class="header">
+      <div class="ps-mark" aria-hidden="true">PS</div>
+      <p class="eyebrow">CONSOLE INFORMATION</p>
+      <h1><span>PS4</span> SYSTEM CHECK</h1>
+      <p class="subtitle">فحص معلومات جهاز PlayStation 4</p>
+    </header>
+
+    <section class="hero" aria-label="شعار المشروع">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <img class="logo" src="assets/logo-crow.png" alt="شعار الغراب">
+    </section>
+
+    <section class="info-panel" aria-label="معلومات الجهاز">
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">◈</span>
+        <div class="info-copy"><small>نوع الجهاز</small><strong id="device-type">PlayStation 4 (غير مؤكد من المتصفح)</strong></div>
+        <span class="status-dot"></span>
+      </div>
+      <div class="info-row">
+        <span class="info-icon" aria-hidden="true">⚙</span>
+        <div class="info-copy"><small>إصدار النظام</small><strong id="system-version">لا يمكن قراءته من صفحة ويب عادية</strong></div>
+        <span class="status-dot muted"></span>
+      </div>
+      <p class="notice">المتصفح لا يكشف رقم نظام PS4 الحقيقي بشكل موثوق. اختر الإصدار يدويًا للمقارنة.</p>
+    </section>
+
+    <section class="versions" aria-label="اختر إصدار النظام">
+      <h2>اختر إصدار النظام</h2>
+      <div class="version-grid">
+        <button class="version-button" data-version="13.02"><span class="ps-symbol">P</span><b>13.02</b></button>
+        <button class="version-button" data-version="13.04"><span class="ps-symbol">P</span><b>13.04</b></button>
+        <button class="version-button" data-version="13.50"><span class="ps-symbol">P</span><b>13.50</b></button>
+        <button class="version-button" data-version="13.52"><span class="ps-symbol">P</span><b>13.52</b></button>
+        <button class="version-button" data-version="14.00"><span class="ps-symbol">P</span><b>14.00</b></button>
+      </div>
+      <p class="selection" id="selection" aria-live="polite">لم يتم اختيار إصدار بعد</p>
+    </section>
+
+    <footer>واجهة تجريبية • لا تجمع بيانات شخصية ولا تفحص الجهاز عن بُعد</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
