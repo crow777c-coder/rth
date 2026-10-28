@@ -18,7 +18,12 @@
       });
       button.classList.add("selected");
       button.setAttribute("aria-pressed", "true");
-      selection.textContent = `الإصدار المحدد: ${button.dataset.version}`;
+      const version = button.dataset.version;
+      selection.textContent = `تم اختيار ${version} — جارٍ فتح Golden Hen للتحقق من إصدار الجهاز...`;
+      // Open the bundled Golden Hen launcher. It checks the console's actual
+      // firmware and chooses its own matching files; this UI selection does
+      // not override firmware detection.
+      window.location.href = `goldhen/index.html?selected=${encodeURIComponent(version)}`;
     });
     button.setAttribute("aria-pressed", "false");
   });
